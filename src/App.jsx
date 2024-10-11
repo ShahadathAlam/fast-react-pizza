@@ -18,6 +18,8 @@ const router = createBrowserRouter([
       {
         path: "/menu",
         element: <Menu />,
+
+        // React router is no longer responsible for making component to URLs in the browser but to also provide the data that is necessary for each page
         loader: menuLoader,
       },
 
