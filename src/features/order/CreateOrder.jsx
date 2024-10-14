@@ -51,6 +51,7 @@ function CreateOrder() {
         <div>
           <label>First Name</label>
           <input
+            className="input"
             placeholder="Write your name..."
             type="text"
             name="customer"
@@ -62,6 +63,7 @@ function CreateOrder() {
           <label>Phone number</label>
           <div>
             <input
+              className="input"
               placeholder="Write your phone number..."
               type="tel"
               name="phone"
@@ -76,7 +78,8 @@ function CreateOrder() {
           <div>
             <input
               placeholder="Write your address..."
-              className="w-full rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3"
+              //Reusing Styles With @apply
+              className="input"
               type="text"
               name="address"
               required
