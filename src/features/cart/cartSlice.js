@@ -62,4 +62,12 @@ export const getTotalCartQuantity = (state) =>
 export const getTotalCartPrice = (state) =>
   state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
 
+export const getCurrentQuantityById = (id) => (state) =>
+  state.cart.cart.find((item) => item.pizzaId === id)?.quantity ?? 0;
+
+// export const getCurrentQuantityById = function (id) {
+//   return (state) =>
+//     state.cart.cart.find((item) => item.pizzaId === id)?.quantity ?? 0;
+// };
+
 // Optimizing Redux Selectors with Reselect Library for Efficient Cart Management
